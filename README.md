@@ -1,5 +1,6 @@
 # MongoDB-EasyLearn
 --> Connectign to Compass using MongoDB
+
 Please download Compass from the MongoDB Download Center. If you downloaded Compass before today, please make sure you are using version 1.8 or later and upgrade if necessary.
 Install Compass on your computer from the download.
 Launch Compass.
