@@ -1,5 +1,5 @@
 # MongoDB-EasyLearn
---> Connectign to Compass using MongoDB
+--> Connecting to Compass using MongoDB
 
 Please download Compass from the MongoDB Download Center. If you downloaded Compass before today, please make sure you are using version 1.8 or later and upgrade if necessary.
 Install Compass on your computer from the download.
@@ -7,6 +7,7 @@ Launch Compass.
 When Compass opens you will see a page titled "Connect to Host".
 
 https://s3.amazonaws.com/edu-static.mongodb.com/lessons/M001/compass_connect_screen.png
+
 Use the following information to complete this form, but do not click "Connect" yet.
 
 Hostname: cluster0-shard-00-00-jxeqq.mongodb.net
