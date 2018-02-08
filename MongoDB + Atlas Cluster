@@ -1,0 +1,37 @@
+Go to : https://www.mongodb.com/download-center#enterprise
+
+Download the latest version of MongoDB Enterprise Client for windows (msi File)
+
+--> Edit Environment Variables --> Path, Add "C:\Program Files\MongoDB\Server\3.6\bin"
+
+open command prompt --> cmd --> Type mongodb --nodb
+
+this will give the output as "MongoDB shell version v3.6.2" which means mongo DB has been installed correctly.
+
+Connect to Atlas Cluster :
+---------------------------
+
+Please use the following command to connect to the class Atlas cluster. You should issue this command in the cmd shell, the OSX Terminal application, or another command-line interface of your choice.
+
+mongo "mongodb://cluster0-shard-00-00-jxeqq.mongodb.net:27017,cluster0-shard-00-01-jxeqq.mongodb.net:27017,cluster0-shard-00-02-jxeqq.mongodb.net:27017/test?replicaSet=Cluster0-shard-0" --authenticationDatabase admin --ssl --username m001-student --password m001-mongodb-basics
+
+Please note that, while we've labeled this as a lab, it is ungraded. This writeup is here simply to get you started on creating an Atlas cluster.
+
+Go to https://cloud.mongodb.com/links/registerForAtlas and complete the account creation form you see on that page. Please make sure you see the message "Sign up for MongoDB Atlas" at the top of the page.
+
+Once you have completed the registration form, in the next page that appears, you will be asked to choose a new group name. We use groups to manage access to Atlas clusters. Please use the name, m001-sandbox.
+
+Once you have created a group, in the next page, enter the name, Sandbox for your cluster.
+
+On the same page, select the M0 instance size. Note that the "Pricing" now changes to say "$0.00/forever". You do NOT need to enter a credit card to create a free-tier Atlas cluster (M0). They are free.
+
+Scroll to the bottom of the cluster-creation form and enter an administrative username and password. Please enter the username, m001-student and the password, m001-mongodb-basics
+Once you've entered your username and password, click Confirm & Deploy. You will need to wait a few minutes for your cluster to be spun up.
+
+Once your cluster is ready, click on the Security tab and then on the IP Whitelist tab. Click the ADD IP ADDRESS button and, then, in the modal that pops up, click ALLOW ACCESS FROM ANYWHERE. Click the CONFIRM button and wait while the security settings for your cluster are configured.
+
+Note that we do not generally recommend opening an Atlas cluster to allow access from anywhere. We do that for this class to minimize network issues that you might run into.
+
+--Connecting a sandbox cluster from mongo shell
+
+mongo "mongodb+srv://cluster0-updcb.mongodb.net/test" --username <Give your user name for cluster here>
