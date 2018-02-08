@@ -9,7 +9,7 @@ open command prompt --> cmd --> Type "mongodb --nodb"
 this will give the output as "MongoDB shell version v3.6.2" which means mongo DB has been installed correctly.
 
 Connect to Atlas Cluster :
-------------------------------------------------------------------------------------------------------------------------
+---------------------------
 
 Please use the following command to connect to the class Atlas cluster. You should issue this command in the cmd shell, the OSX Terminal application, or another command-line interface of your choice.
 
